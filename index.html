@@ -1,34 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-  <h1>Table's Web Page </h1>
-    <form method="get" action="/fghj">
-        <div>
-            <input type="text" placeholder="Enter Your Name" />
+  <h1>Form's Web Page </h1>
+  <form  method="post" action="\savedata">
+    <div>
+      <label for="userName">Enter Name</label>
+      <input type="text"  name="username" id="userName" >
+    </div>
+    <div>
+      <label for="userEmail">Enter Email</label>
+      <input type="email" name="useremail" id="userEmail">
+    </div>
+    <div>
+      <label for="userPass">Enter password</label>
+      <input type="password" name="userpassword" id="userPass">
+    </div>
+    <div>
+      <label for="userNumber">Enter Mob. Number</label>
+      <input type="number" name="mobile" id="userNumber">
+    </div>
+    <div>
+      <label>Gender - :  </label>
+      <input value="Female" id="female" type="radio" name="gender">
+      <label for="female">Female</label>
+      <input value="Male" id="male" type="radio" name="gender">
+      <label for="male">Male</label>
+    </div>
 
-        </div>
-        <div>
-            <input type="number" placeholder="Enter Your Mobile No." />
-
-        </div>
-        <div>
-            <input type="email" placeholder="Enter Your Email" />
-
-        </div>
-        <div>
-            <input type="password" placeholder="Enter Your password" />
-
-        </div>
-          <div>
-            <input type="button" value="click" />
-        </div>
-       
-
-    </form>
+      <div>
+        <select >
+          <option value="BCA">BCA</option>
+          <option value="BCOM">BCOM</option>
+          <option value="Bsc">Bsc</option>
+        </select>
+    </div>
+    <div>
+      <button>Save</button>
+    </div>
+  </form>
 </body>
 </html>
