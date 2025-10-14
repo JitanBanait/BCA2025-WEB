@@ -1,0 +1,63 @@
+
+html , body{
+    margin: 0;
+    height: 100%;
+}
+
+#mainContainer{
+    display: flex;
+    border: 2px solid rgb(52, 79, 165);
+    height: 99%;
+    flex-direction: column;
+   
+}
+
+#tab{
+        display: flex;
+    
+    height: 15%;
+    width: 100%;
+}
+
+#tab div{
+    flex: 1;
+    
+    border: 1px solid black;
+}
+#slide{
+    display: flex;
+    height: 35%;
+    width: 100%;
+  
+    border: 1px solid black;
+}
+#content{
+    display: flex;
+    height: 50%;
+    border: 1px solid black;
+   
+    width: 100%;
+}
+
+#content > div{
+    display: flex;
+    height: 100%;
+    width: 50%;
+ 
+    border: 1px solid black;
+}
+
+#contentProduct > div{
+display: flex;
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.item{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+}
