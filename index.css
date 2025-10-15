@@ -14,14 +14,18 @@ html , body{
 
 #tab{
         display: flex;
-    
+        flex-wrap: wrap;
     height: 15%;
     width: 100%;
+    overflow: auto;
 }
 
 #tab div{
     flex: 1;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(10px , 3vw , 50px);
     border: 1px solid black;
 }
 #slide{
@@ -60,4 +64,12 @@ display: flex;
     width: 100%;
     display: flex;
     border: 1px solid black;
+}
+.carousel , .carousel-item , .carousel-inner, .slideImg{
+    height: 100%;
+    width:100%;
+}
+
+#img > img{
+    width: 100%;
 }
