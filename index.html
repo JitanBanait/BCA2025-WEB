@@ -4,62 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WEB</title>
-
 <style>
-    @font-face {
-      font-family: "play";
-      src: url("./play.ttf");
+
+    body,html{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    #mainContainer{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(5 , 1fr);
+        grid-template-rows: repeat(10 , 1fr);
+        grid-gap: 3%;
+    }
+    .box{
+        border: 1px solid black;
+    }
+    #one{
+            grid-row-start: 1;
+    grid-row-end: 9;
+    }
+    #two{
+        grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
     }
 
-    #img1{
-      float: left;
-      margin-right: 15px;
+    #three{
+            grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 9;
     }
-     #img2{
-      float: right;
-      margin-left: 15px;
+
+    #four{
+            grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
     }
-p{
-  font-family: "play";
-  clear: both;
-}
+    #five{
+        grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    }
+    #six{
+        grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    }
+
+    #seven{
+        grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    }
+
+    #eight{
+        grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    }
+    #nine{
+        grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    }
+    #ten{
+        grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    }
 
 </style>
 </head>
 <body>
-
     <div id="mainContainer">
-
-          <img id="img1" src="./Screenshot 2025-06-13 132645.png" height="300px" width="300px"/>
-      <img id="img2" src="./Screenshot 2025-06-13 132645.png" height="300px" width="300px"/>
-          <p>efff f vfdvwvw fvefff f vfdvwvw 
-            fvwrvffsdvwv vwrgwvfsv ffffffefff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw      efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw      efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw      efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwwwfvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww
-            efff f vfdvwvw fvwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwwwffdvsd vvswwwwwwwwwwwwwwwwwwrvffsdvwv vwrgwvfsv ffffffffdvsd vvswwwwwwwwwwwwwwwww</p>
-       
-
+        <div id="one" class="box">1</div>
+        <div id="two" class="box">2</div>
+        <div id="three" class="box">3</div>
+        <div id="four" class="box">4</div>
+        <div id="five" class="box">5</div>
+        <div id="six" class="box">6</div>
+        <div id="seven" class="box">7</div>
+        <div id="eight" class="box">8</div>
+        <div id="nine" class="box">9</div>
+        <div id="ten" class="box">10</div>
     </div>
-   
-
-  
-
 </body>
 </html>
